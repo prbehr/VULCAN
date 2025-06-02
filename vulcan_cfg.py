@@ -14,7 +14,7 @@ gibbs_text = 'thermo/gibbs_text.txt' # (all the nasa9 files must be placed in th
 cross_folder = 'thermo/photo_cross/'
 com_file = 'thermo/all_compose.txt'
 atm_file = 'atm/atm_Earth_Jan_Kzz.txt' # TP and Kzz (optional) file
-sflux_file = 'atm/stellar_flux/Gueymard_solar.txt' # This is the flux density at the stellar surface
+sflux_file = 'atm/stellar_flux/alf_cen_min.txt' # This is the flux density at the stellar surface
 top_BC_flux_file = 'atm/' # the file for the top boundary conditions
 bot_BC_flux_file = 'atm/BC_bot_Earth.txt' # the file for the lower boundary conditions
 vul_ini = 'output/' # the file to initialize the abundances for ini_mix = 'vulcan_ini'
@@ -22,7 +22,7 @@ vul_ini = 'output/' # the file to initialize the abundances for ini_mix = 'vulca
 output_dir = 'output/'
 plot_dir = 'plot/'
 movie_dir = 'plot/movie/'
-out_name =  'Earth.vul' # output file name
+out_name =  'alf_cen_min.vul' # output file name
 
 # ====== Setting up the elemental abundance ======
 use_solar = False # True: using the solar abundance from Table 10. K.Lodders 2009; False: using the customized elemental abundance. 
@@ -40,9 +40,9 @@ const_mix = {'N2':0.78, 'O2':0.20, 'H2O':1e-6,  'CO2':4E-4, 'Ar':9.34e-3, 'SO2':
 # ====== Setting up photochemistry ======
 use_photo = True
 # astronomy input
-r_star = 1 # stellar radius in solar radius
+r_star = 1.2175 # stellar radius in solar radius
 Rp = 6.3781e8 # Planetary radius (cm) (for computing gravity)
-orbit_radius = 1 # planet-star distance in A.U.
+orbit_radius = 1.6 # planet-star distance in A.U.
 sl_angle = 58 /180.*3.14159 # the zenith angle of the star in degree (usually 58 deg for the dayside average)
 f_diurnal = 0.5 # to account for the diurnal average of solar flux (i.e. 0.5 for Earth; 1 for tidally-locked planets) 
 scat_sp = ['N2', 'O2'] # the bulk gases that contribute to Rayleigh scattering
