@@ -14,7 +14,7 @@ gibbs_text = 'thermo/gibbs_text.txt' # (all the nasa9 files must be placed in th
 cross_folder = 'thermo/photo_cross/'
 com_file = 'thermo/all_compose.txt'
 atm_file = 'atm/atm_Earth_Jan_Kzz.txt' # TP and Kzz (optional) file
-sflux_file = 'atm/stellar_flux/alf_cen_min.txt' # This is the flux density at the stellar surface
+sflux_file = 'atm/stellar_flux/alf_cen_peak.txt' # This is the flux density at the stellar surface
 top_BC_flux_file = 'atm/' # the file for the top boundary conditions
 bot_BC_flux_file = 'atm/BC_bot_Earth.txt' # the file for the lower boundary conditions
 vul_ini = 'output/' # the file to initialize the abundances for ini_mix = 'vulcan_ini'
@@ -22,7 +22,7 @@ vul_ini = 'output/' # the file to initialize the abundances for ini_mix = 'vulca
 output_dir = 'output/'
 plot_dir = 'plot/'
 movie_dir = 'plot/movie/'
-out_name =  'alf_cen_min.vul' # output file name
+out_name =  'alf_cen_peak.vul' # output file name
 
 # ====== Setting up the elemental abundance ======
 use_solar = True # True: using the solar abundance from Table 10. K.Lodders 2009; False: using the customized elemental abundance. 
@@ -153,7 +153,7 @@ post_conden_rtol = 0.2 # switched to this value after fix_species_time
 # ====== Setting up for ouwtput and plotting ======
 # plotting:
 plot_TP = False
-use_live_plot = False
+use_live_plot = True
 use_live_flux = False
 use_plot_end = False
 use_plot_evo = False
