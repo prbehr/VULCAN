@@ -25,7 +25,7 @@ movie_dir = 'plot/movie/'
 out_name =  'alf_cen_min.vul' # output file name
 
 # ====== Setting up the elemental abundance ======
-use_solar = False # True: using the solar abundance from Table 10. K.Lodders 2009; False: using the customized elemental abundance. 
+use_solar = True # True: using the solar abundance from Table 10. K.Lodders 2009; False: using the customized elemental abundance. 
 # customized elemental abundance (only read when use_solar = False)
 O_H = 6.0618E-4 *(0.85) #*(0.793)  
 C_H = 2.7761E-4  
@@ -153,7 +153,7 @@ post_conden_rtol = 0.2 # switched to this value after fix_species_time
 # ====== Setting up for ouwtput and plotting ======
 # plotting:
 plot_TP = False
-use_live_plot = True
+use_live_plot = False
 use_live_flux = False
 use_plot_end = False
 use_plot_evo = False
